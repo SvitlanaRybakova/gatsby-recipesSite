@@ -3,6 +3,7 @@ import Tagslist from "./TagsList"
 import RecipesList from "./RecipesList"
 import { graphql, useStaticQuery } from "gatsby"
 
+// example of component query
 const query = graphql`
   {
     allContentfulRecipe(sort: { fields: title, order: ASC }) {
@@ -29,10 +30,10 @@ const AllRecipes = () => {
   // console.log(recipes);
   
   return (
-    <div>
+    <section className="recipes-container">
       <Tagslist recipes={recipes} />
       <RecipesList recipes={recipes} />
-    </div>
+    </section>
   )
 }
 
