@@ -21,6 +21,7 @@ module.exports = {
     ],
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
@@ -51,7 +52,7 @@ module.exports = {
             },
             {
               family: "Inconsolata",
-              variants: ["400","500", "600", "700"],
+              variants: ["400", "500", "600", "700"],
             },
           ],
         },

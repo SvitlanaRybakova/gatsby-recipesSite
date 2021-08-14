@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 
 import RecipesList from '../components/RecipesList'
+import SEO from '../components/SEO';
 // example of page query
 export const query = graphql`
   {
@@ -27,6 +28,7 @@ const Contacts = ({
 }) => {
   return (
     <Layout>
+      <SEO title="Contacts" />
       <main className="page">
         <section className="contact-page">
           <article className="contact-info">

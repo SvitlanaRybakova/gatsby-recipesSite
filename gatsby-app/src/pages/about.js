@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link, graphql } from "gatsby"
 
 import RecipesList from '../components/RecipesList'
-
+import SEO from '../components/SEO'
 // example of page query
 export const query = graphql`
   {
@@ -25,6 +25,7 @@ export const query = graphql`
 const About = ({ data: { allContentfulRecipe: {nodes:recipes} } }) => {
   return (
     <Layout>
+      <SEO title="About" />
       <main className="page">
         <section className="about-page">
           <article>
